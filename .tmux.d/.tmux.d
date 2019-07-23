@@ -1,0 +1,1 @@
+/Users/Mikuma/dotfiles/.tmux.d
