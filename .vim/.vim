@@ -1,1 +1,0 @@
-/Users/Mikuma/dotfiles/.vim
