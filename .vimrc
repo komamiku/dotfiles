@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin '[Github Author]/[Github repo]' の形式で記入
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'AutoComplPop'
 
 call vundle#end()
 filetype plugin indent on
