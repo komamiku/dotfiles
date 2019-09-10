@@ -1,13 +1,14 @@
 #!/bin/sh
 
+SCRIPT_DIR=$(cd $(dirname $0); pwd)
 # link
-ln -snf ~/dotfiles/.vimrc ~/.vimrc
-ln -snf ~/dotfiles/.vim ~/.vim
-ln -snf ~/dotfiles/.tmux.conf ~/.tmux.conf
-ln -snf ~/dotfiles/.tmux.d ~/.tmux.d
+ln -snf $SCRIPT_DIR/.vimrc ~/.vimrc
+ln -snf $SCRIPT_DIR/.vim ~/.vim
+ln -snf $SCRIPT_DIR/.tmux.conf ~/.tmux.conf
+ln -snf $SCRIPT_DIR/.tmux.d ~/.tmux.d
 
 # vim plugin setup
-rm -rf ~/dotfiles/.vim/bundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/dotfiles/.vim/bundle/Vundle.vim
+rm -rf $SCRIPT_DIR/.vim/bundle
+git clone https://github.com/VundleVim/Vundle.vim.git $SCRIPT_DIR/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
