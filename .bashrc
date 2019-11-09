@@ -24,7 +24,7 @@ GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
 GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWSTASHSTATE=true
-export PS1='\[\033[0;31m\]\w\[\033[0;35m\]$(__git_ps1)\[\e[1;36m\]\n>\[\033[00m\] '
+export PS1='\[\033[0;32m\]\u@\h\[\033[00m\]:\[\033[0;31m\]\w\[\033[0;35m\]$(__git_ps1)\[\e[1;36m\]\n>\[\033[00m\] '
 
 # local設定があるならそちらを優先
 if [ -e "${HOME}/.bashrc.local" ]; then
