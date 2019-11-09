@@ -17,6 +17,7 @@ make_link $SCRIPT_DIR/.vimrc ~/.vimrc
 make_link $SCRIPT_DIR/.vim ~/.vim
 make_link $SCRIPT_DIR/.tmux.conf ~/.tmux.conf
 make_link $SCRIPT_DIR/.tmux.d ~/.tmux.d
+make_link $SCRIPT_DIR/.gitconfig ~/.gitconfig
 
 # vim plugin setup
 rm -rf $SCRIPT_DIR/.vim/bundle
