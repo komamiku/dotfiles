@@ -1,5 +1,11 @@
 # Dotfiles
 
+## Setting Files List
+- vim
+- tmux
+- git
+- bash
+
 ## Installation
 1. Move to this repository.
 
