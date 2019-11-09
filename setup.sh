@@ -1,11 +1,22 @@
 #!/bin/sh
 
+make_link () {
+    source=$1
+    target=$2
+    if [ -e $target ] && [ ! -L $target ]; then
+        backup=$target.dotfiles-bak
+        mv -f $target $backup
+        echo "!Note: Existing file "$target" is moved to "$backup
+    fi
+    ln -snf $source $target
+}
+
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 # link
-ln -snf $SCRIPT_DIR/.vimrc ~/.vimrc
-ln -snf $SCRIPT_DIR/.vim ~/.vim
-ln -snf $SCRIPT_DIR/.tmux.conf ~/.tmux.conf
-ln -snf $SCRIPT_DIR/.tmux.d ~/.tmux.d
+make_link $SCRIPT_DIR/.vimrc ~/.vimrc
+make_link $SCRIPT_DIR/.vim ~/.vim
+make_link $SCRIPT_DIR/.tmux.conf ~/.tmux.conf
+make_link $SCRIPT_DIR/.tmux.d ~/.tmux.d
 
 # vim plugin setup
 rm -rf $SCRIPT_DIR/.vim/bundle
