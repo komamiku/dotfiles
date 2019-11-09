@@ -6,6 +6,11 @@
 - git
 - bash
 
+## Preparation
+
+- Reinforcement of completion for bash
+  - `brew install bash-completion`
+
 ## Installation
 1. Move to this repository.
 
