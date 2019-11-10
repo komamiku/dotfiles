@@ -6,7 +6,7 @@
 [alias]
     s = status
     co = checkout
-    g = log --graph --topo-order --all --date=format:'%Y/%m/%d' --pretty=format:'%C(green)%h %C(blue)[%cd] %C(cyan)@%cn%C(red)%d%C(reset)%n%s%n'
+    g = log --graph --topo-order --all --date=short --pretty=format:'%C(green)%h %C(blue)[%cd] %C(cyan)@%cn%C(red)%d%C(reset)%n%s%n'
     ci = commit
     difff = diff --word-diff
 [include]
