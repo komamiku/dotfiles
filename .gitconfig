@@ -8,7 +8,10 @@
     co = checkout
     g = log --graph --topo-order --all --date=short --pretty=format:'%C(green)%h %C(blue)%ad %C(cyan)%an%C(red)%d %C(reset)%s'
     cm = commit -m
-    difff = diff --word-diff
+    d = diff
+    dc = diff --cached
+    dw = diff --word-diff
+    dwc = diff --word-diff --cached
 [include]
     path = ~/.gitconfig.local
 
