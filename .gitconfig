@@ -6,7 +6,8 @@
 [alias]
     s = status
     co = checkout
-    g = log --graph --topo-order --all --date=short --pretty=format:'%C(green)%h %C(blue)%ad %C(cyan)%an%C(red)%d %C(reset)%s'
+    ga = log --graph --topo-order --all --date=format-local:'%Y-%m-%d %H:%M:%S' --pretty=format:'%C(green)%h %C(blue)%ad %C(cyan)%an%C(red)%d %C(reset)%s'
+    g = log --graph --topo-order --date=format-local:'%Y-%m-%d %H:%M:%S' --pretty=format:'%C(green)%h %C(blue)%ad %C(cyan)%an%C(red)%d %C(reset)%s'
     cm = commit -m
     d = diff
     dc = diff --cached
